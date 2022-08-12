@@ -4,34 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Joydeep Halder" />
-    <meta name="description" content="web desing" />
-    <meta
-      name="keywords"
-      content="web design, joydeep halder, web developement"
-    />
-    <title>Acme Web Design</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Acme</title>
   </head>
   <body>
+    <!-- navigation -->
     <header>
-      <div class="container">
-        <div class="flex-box">
-          <div id="branding">
-            <h1><span class="highlight">Acme</span> Web Design</h1>
-          </div>
-          <nav>
-            <ul>
-              <li class="current"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="navbar container">
+        <div class="logo"><span>Acme</span> Web Design</div>
+        <nav>
+          <a class="nav-item active" href="index.html">Home</a>
+          <a class="nav-item" href="about.html">About</a>
+          <a class="nav-item" href="services.html">Services</a>
+        </nav>
       </div>
     </header>
 
-    <section id="showcase">
+    <!-- hero section -->
+    <section id="hero">
       <div class="container">
         <h1>Affordable Professional Web Design</h1>
         <p>
@@ -41,49 +31,48 @@
       </div>
     </section>
 
+    <!-- newsletter section -->
     <section id="newsletter">
       <div class="container">
-        <div class="flex-box">
-          <h1>Subscribe to our newsletter</h1>
-          <form action="process.php" method="POST">
-            <input type="email" placeholder="Enter email" />
-            <button type="submit" class="button_1">Subscribe</button>
-          </form>
-        </div>
+        <h3>Subscribe to our newsletter</h3>
+        <form action="">
+          <input type="email" placeholder="Enter email" />
+          <input type="submit" value="Subscribe" />
+        </form>
       </div>
     </section>
 
-    <section id="boxes">
+    <!-- Feature section -->
+    <section id="features">
       <div class="container">
-        <div class="flex-box">
-          <div class="box">
-            <img src="./images/logo_html.png" alt="html" />
-            <h3>HTML5 Markup</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad illo
-            </p>
-          </div>
-          <div class="box">
-            <img src="./images/logo_css.png" alt="css" />
-            <h3>CSS3 Styling</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad illo
-            </p>
-          </div>
-          <div class="box">
-            <img src="./images/logo_brush.png" alt="brush" />
-            <h3>Graphic Design</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad illo
-            </p>
-          </div>
+        <div class="feature-box">
+          <img src="images/logo_html.png" />
+          <h3>HTML5 Markup</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad illo
+          </p>
+        </div>
+        <div class="feature-box">
+          <img src="images/logo_css.png" />
+          <h3>CSS Styling</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad illo
+          </p>
+        </div>
+        <div class="feature-box">
+          <img src="images/logo_brush.png" />
+          <h3>Graphic Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad illo
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
       <div class="container">
-        <p>Acme Web Desing, Copyright &copy; 2017</p>
+        <p>Acme Web Desing, Copyright © 2022</p>
       </div>
     </footer>
   </body>

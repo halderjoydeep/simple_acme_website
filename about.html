@@ -4,87 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Joydeep Halder" />
-    <meta name="description" content="web desing" />
-    <meta
-      name="keywords"
-      content="web design, joydeep halder, web developement"
-    />
-    <title>About</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Acme</title>
   </head>
   <body>
+    <!-- navigation -->
     <header>
-      <div class="container">
-        <div class="flex-box">
-          <div id="branding">
-            <h1><span class="highlight">Acme</span> Web Design</h1>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li class="current"><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="navbar container">
+        <div class="logo"><span>Acme</span> Web Design</div>
+        <nav>
+          <a class="nav-item" href="index.html">Home</a>
+          <a class="nav-item active" href="about.html">About</a>
+          <a class="nav-item" href="services.html">Services</a>
+        </nav>
       </div>
     </header>
 
+    <!-- newsletter section -->
     <section id="newsletter">
       <div class="container">
-        <div class="flex-box">
-          <h1>Subscribe to our newsletter</h1>
-          <form action="process.php" method="POST">
-            <input type="email" placeholder="Enter email" />
-            <button type="submit" class="button_1">Subscribe</button>
-          </form>
-        </div>
+        <h3>Subscribe to our newsletter</h3>
+        <form action="">
+          <input type="email" placeholder="Enter email" />
+          <input type="submit" value="Subscribe" />
+        </form>
       </div>
     </section>
 
-    <section id="main">
+    <!-- about us section -->
+    <section id="main-area">
       <div class="container">
-        <div class="flex-box">
-          <article id="main-col">
-            <h1>About Us</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              tempore eveniet laudantium, dolores necessitatibus voluptatem quam
-              itaque iusto sunt maiores atque aliquid nemo illo. Dolores illo
-              asperiores temporibus et quis. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Alias obcaecati sed commodi,
-              distinctio accusantium expedita rerum pariatur? Fugiat porro
-              veniam ullam error distinctio reprehenderit asperiores? Asperiores
-              quidem eius nam amet!
-            </p>
-
-            <p class="dark">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              tempore eveniet laudantium, dolores necessitatibus voluptatem quam
-              itaque iusto sunt maiores atque aliquid nemo illo. Dolores illo
-              asperiores temporibus et quis. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Alias obcaecati sed commodi,
-              distinctio accusantium expedita rerum pariatur? Fugiat porro
-              veniam ullam error distinctio reprehenderit asperiores? Asperiores
-              quidem eius nam amet!
-            </p>
-          </article>
-          <aside id="sidebar" class="dark">
-            <h3>What We Do</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              sapiente, nostrum possimus hic veritatis qui exercitationem
-              explicabo ratione. Repellendus, ducimus.
-            </p>
-          </aside>
+        <div class="main-content">
+          <h3>About us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            tempore eveniet laudantium, dolores necessitatibus voluptatem quam
+            itaque iusto sunt maiores atque aliquid nemo illo. Dolores illo
+            asperiores temporibus et quis. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Alias obcaecati sed commodi,
+            distinctio accusantium expedita rerum pariatur? Fugiat porro veniam
+            ullam error distinctio reprehenderit asperiores? Asperiores quidem
+            eius nam amet!
+          </p>
+          <p class="dark">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            tempore eveniet laudantium, dolores necessitatibus voluptatem quam
+            itaque iusto sunt maiores atque aliquid nemo illo. Dolores illo
+            asperiores temporibus et quis. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Alias obcaecati sed commodi,
+            distinctio accusantium expedita rerum pariatur? Fugiat porro veniam
+            ullam error distinctio reprehenderit asperiores? Asperiores quidem
+            eius nam amet!
+          </p>
+        </div>
+        <div class="sidebar dark">
+          <h3>What We Do</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            sapiente, nostrum possimus hic veritatis qui exercitationem
+            explicabo ratione. Repellendus, ducimus.
+          </p>
         </div>
       </div>
     </section>
-
+    <!-- Footer -->
     <footer>
       <div class="container">
-        <p>Acme Web Desing, Copyright &copy; 2017</p>
+        <p>Acme Web Desing, Copyright © 2022</p>
       </div>
     </footer>
   </body>

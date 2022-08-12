@@ -1,213 +1,261 @@
-body {
-  font: 15px/1.5 Arial, Helvetica, sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.button_1 {
-  background-color: #e8491d;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
+  padding: 0 10%;
 }
 
 .dark {
+  color: white;
   background-color: #35424a;
-  color: #fff;
-  padding: 10px;
+  padding: 20px;
 }
 
+/* Navigation */
 header {
+  padding: 20px 0;
   background-color: #35424a;
-  color: #fff;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #e8491d 3px solid;
+  border-bottom: 3px solid orangered;
 }
 
-.flex-box {
+.navbar {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
-#branding h1 {
-  margin: 0;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-header a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-header ul {
-  display: flex;
-}
-
-header li {
-  display: flex;
-  padding-left: 20px;
-  list-style: none;
-}
-
-.highlight,
-header .current a {
-  color: #e8491d;
-}
-
-header a:hover {
+.logo {
+  font-size: 2rem;
   font-weight: bold;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.logo span {
+  color: orangered;
+}
+
+.nav-item {
+  display: inline-block;
+  color: #fff;
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
+.nav-item:hover:not(.active) {
   color: #ccc;
 }
 
-#showcase {
-  min-height: 400px;
-  background: url(../images/showcase.jpg) no-repeat 0 -400px;
+.active {
+  color: orangered;
+}
+
+/* Hero section */
+#hero {
   text-align: center;
   color: #fff;
+  background: url("../images/showcase.jpg") no-repeat 0 -400px;
+  padding: 10% 0;
 }
 
-#showcase h1 {
-  margin-top: 100px;
-  font-size: 55px;
-  margin-bottom: 10px;
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-#showcase p {
+#hero p {
   font-size: 18px;
 }
 
+/* Newsletter section */
 #newsletter {
   background-color: #35424a;
-  color: #fff;
-  padding: 15px;
+  padding: 2% 0;
 }
 
-#newsletter h1 {
-  margin-top: 30px;
-  margin-bottom: 30px;
+#newsletter > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#newsletter form {
-  margin-top: 30px;
-  margin-bottom: 30px;
+#newsletter h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 20px 0;
 }
 
 #newsletter input {
-  padding: 8px;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+}
+
+#newsletter input[type="email"] {
   width: 250px;
 }
 
-#boxes {
+input[type="submit"] {
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+/* Feature Section */
+#features {
+  padding: 4% 0;
+}
+
+#features > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.feature-box img {
+  width: 30%;
+  height: auto;
+}
+
+.feature-box h3 {
+  margin: 20px 0;
+}
+
+/* About us section */
+#main-area {
+  padding: 40px 0;
+}
+
+#main-area > div {
+  display: flex;
+}
+
+.main-content {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  margin-left: 40px;
+}
+
+#main-area p {
+  text-align: justify;
   margin-top: 20px;
 }
 
-#boxes img {
-  width: 100px;
+/* Services section */
+.service-box {
+  background-color: #ccc;
+  padding: 40px;
+  margin: 20px 0;
 }
 
-#boxes .box {
-  text-align: center;
+.sidebar.quote {
+  align-self: flex-start;
 }
 
-footer {
-  padding: 10px;
-  margin-top: 30px;
-  background-color: #e8491d;
-  color: #fff;
-  text-align: center;
+.sidebar.quote form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
 }
 
-#main {
-  margin-top: 30px;
-}
-
-#main-col {
-  margin-right: 20px;
-}
-
-#sidebar {
-  color: white;
-}
-
-#services li {
-  background-color: #e6e6e6;
-  padding: 20px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-
-#sidebar form input,
+.sidebar.quote input,
 textarea {
-  display: block;
-  padding: 8px;
-  margin-bottom: 8px;
-  list-style: none;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
 }
 
-@media (max-width: 768px) {
-  .flex-box {
-    display: block;
+/* footer */
+footer {
+  padding: 40px 0;
+  background-color: orangered;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 920px) {
+  #hero h1 {
+    font-size: 2.5rem;
   }
 
-  header,
-  #newsletter {
-    text-align: center;
+  #hero p {
+    font-size: 1rem;
+    font-weight: 100;
   }
 
-  header ul {
-    justify-content: center;
+  #newsletter h3 {
+    font-size: 1.2rem;
+  }
+
+  #newsletter input[type="email"] {
+    width: 200px;
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    padding: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+
+  #newsletter > div {
+    flex-direction: column;
+  }
+
+  #newsletter form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin-bottom: 20px;
   }
 
-  header li {
-    padding: 0 10px;
-  }
-
-  #showcase h1 {
-    margin-top: 20px;
-    font-size: 40px;
-  }
-
-  #newsletter input {
+  #newsletter input[type="email"] {
+    width: 100%;
     margin-bottom: 10px;
-    display: block;
-    width: 100%;
   }
 
-  button {
-    display: block;
-    width: 100%;
-  }
-  #main-col {
-    margin-right: 0;
+  #features > div {
+    flex-direction: column;
   }
 
-  #sidebar input,
-  textarea {
-    display: block;
-    width: 90%;
+  .feature-box {
+    margin: 20px 0;
   }
 
-  #sidebar button {
-    width: 95%;
+  #main-area > div {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .sidebar.sidebar.quote {
+    align-self: auto;
   }
 }
